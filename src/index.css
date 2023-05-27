@@ -2,14 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
-body{
-  background-color: #2DD2E3;
-;
+body {
+  /* background-color: #2DD2E3; */
+}
+
+.vick {
+  position: absolute;
+  width: 229px;
+  height: 192px;
+  left: -60px;
+  top: -138px;
+  background: #2dd2e3;
+  filter: blur(192px);
+}
+
+.hehe{ 
+position: absolute;
+width: 229px;
+height: 192px;
+left: 337px;
+top: -129px;
+background: #FF4F6E;
+filter: blur(302px);
 }
