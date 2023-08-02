@@ -8,11 +8,37 @@
   box-sizing: border-box;
 }
 
-body {
-  /* background-color: #2DD2E3; */
+body::-webkit-scrollbar {
+  @apply w-1 bg-transparent;
 }
 
-.vick {
+body::-webkit-scrollbar-corner {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-track {
+  @apply bg-black/10;
+}
+
+body::-webkit-scrollbar-track-piece {
+  @apply bg-transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  @apply transition-all duration-500 rounded-full bg-black/30 hover:bg-black/40;
+}
+
+html {
+  scrollbar-color: rgb(0, 0, 0, 0.4) rgb(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+body {
+  /* background-color: #2dd2e3; */
+  overflow-x: hidden;
+}
+
+.top_gradient {
   position: absolute;
   width: 229px;
   height: 192px;
@@ -22,12 +48,12 @@ body {
   filter: blur(192px);
 }
 
-.hehe{ 
-position: absolute;
-width: 229px;
-height: 192px;
-left: 337px;
-top: -129px;
-background: #FF4F6E;
-filter: blur(302px);
+.navbar_gradient {
+  position: absolute;
+  width: 229px;
+  height: 192px;
+  left: 337px;
+  top: -129px;
+  background: #ff4f6e;
+  filter: blur(302px);
 }

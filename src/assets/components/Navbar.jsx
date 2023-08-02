@@ -1,9 +1,27 @@
 import logo from "../../images/logo.png";
 
 const navbar = () => {
+  const Links = [
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "Home",
+      path: "/",
+    },
+    {
+      label: "Home",
+      path: "/",
+    },
+  ];
   return (
-    <div className="mx-auto conatiner">
-      <div className="vick"></div>
+    <div className="container mx-auto">
+      <div className="top_gradient"></div>
       <nav className="mx-auto mt-[19px] ml-[18px] mr-[15px] flex justify-between items-center  md:ml-[70px] md:mr-[70px]  md:mt-[33px]">
         <a href="/">
           <div className="flex items-center -space-x-[10px]">
@@ -13,9 +31,9 @@ const navbar = () => {
             </span>
           </div>
         </a>
-        <div className="hehe"></div>
-        <div className="md:block hidden">
-          <ul className="flex items-center justify-between  space-x-7">
+        <div className="navbar_gradient"></div>
+        <div className="hidden md:block">
+          <ul className="flex items-center justify-between space-x-7">
             <li className="font-roboto md:text-[15px] lg:text-[16px] text-[#4C686F] leading-[18.75px] ">
               <a href="#">Home</a>
             </li>

@@ -1,14 +1,21 @@
 import { Analytics } from "@vercel/analytics/react";
-import Navbar from "./assets/components/navbar/navbar";
-import Hero from "./assets/components/hero/hero";
+import Hero from "./pages/hero/hero";
+import Navbar from "./assets/components/Navbar";
+// App.jsx
+import { Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Hero/>
-      <Analytics/>
-    </>
-  );
-}
+    // <>
+    //   <Navbar />
+    //   <Hero />
+    // <Analytics />
+    // </>
 
-export default App
+    <Routes>
+      <Route path="/" element={<Hero />} />
+    </Routes>
+  );
+};
+
+export default App;

@@ -1,8 +1,10 @@
 import heroimg from "../../images/heroimg.png";
+import Navbar from "../../assets/components/Navbar";
 
-const hero = () => {
+const Hero = () => {
   return (
     <div className={`mx-auto mt-[53px]`}>
+      <Navbar />
       <main className={`mx-auto flex  justify-center items-center `}>
         <div className="">
           <img src={heroimg} className={`ml-[50px]`} alt="hero image" />
@@ -25,4 +27,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
