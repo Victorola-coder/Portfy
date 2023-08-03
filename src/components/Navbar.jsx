@@ -67,7 +67,7 @@ const Navbar = () => {
           whileTap={{ scale: 1.2 }}
         >
           <Link to="/talk" className="shadow-talk">
-            <button className="bg-[#009DAE] sm:pt-[10px] rounded-[5px] md:pt-[13px] md:pb-[12px] px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF] max-[w-[68px] ">
+            <button className="bg-[#009DAE] sm:pt-[10px] rounded-[5px] md:pt-[13px] md:pb-[12px] px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF] max-[w-[68px] transition-all duration-500 hover:bg-[#FF4F6E]">
               Let{"'"}s Talk
             </button>
           </Link>

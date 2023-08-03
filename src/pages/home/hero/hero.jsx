@@ -36,7 +36,8 @@ const Hero = () => {
           <div>
             <motion.button
               whileTap={{ scale: 0.9 }}
-              className={`bg-[#FF4F6E] md:px-[34px] md:py-[18px] text-center rounded shadow-hire font-ubuntu text-[17px] leading-normal font-bold text-white`}
+              whileHover={{ scale: 1.1 }}
+              className={`bg-[#FF4F6E] md:px-[34px] md:py-[18px] text-center rounded shadow-hire font-ubuntu text-[17px] leading-normal font-bold text-white transition-all duration-500 hover:bg-[#009DAE]`}
             >
               Hire Now
             </motion.button>
@@ -44,21 +45,33 @@ const Hero = () => {
           <div className={`w-[364px] h-[3px] bg-line`}></div>
 
           <div className={`flex items-center gap-[32px]`}>
-            <span className={`h-auto w-auto`}>
+            <motion.span
+              whileTap={{ scale: 1.1 }}
+              whileHover={{ scale: 0.99 }}
+              className={`h-auto w-auto`}
+            >
               <FbIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid`}
+                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </span>
-            <span className={`h-auto w-auto`}>
+            </motion.span>
+            <motion.span
+              whileTap={{ scale: 1.1 }}
+              whileHover={{ scale: 0.99 }}
+              className={`h-auto w-auto`}
+            >
               <TwIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid`}
+                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </span>
-            <span className={`h-auto w-auto`}>
+            </motion.span>
+            <motion.span
+              whileTap={{ scale: 1.1 }}
+              whileHover={{ scale: 0.99 }}
+              className={`h-auto w-auto`}
+            >
               <IgIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid`}
+                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </span>
+            </motion.span>
             {/* <span className={`h-auto w-auto`}>
               <InIcon
                 className={`h-[30px] w-[30px] border-[#009DAE] rounded-full  border-[2px] border-solid`}
