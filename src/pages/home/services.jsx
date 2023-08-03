@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Elipse, Vctrl, WbDevIcon } from "../../assets/Icons";
+import { Elipse, Logic, Motion, Vctrl, WbDevIcon } from "../../assets/Icons";
 
 export default function Services() {
   return (
@@ -41,6 +41,31 @@ export default function Services() {
             </h4>
             <p className={`text-[15px] font-nunito font-normal`}>
               I can use version control systems well, and Git is my go-to-tool
+            </p>
+          </motion.div>
+          <motion.div
+            whileHover={{ background: "#fff", scale: 1.1, color: "#2DD2E3" }}
+            className={`flex flex-col gap-[20px] shadow-card rounded-[10px] px-[25px] py-[30px] bg-white max-w-[263px] max-h-[227px] w-full`}
+          >
+            <Motion />
+            <h4 className={`text-[20px] font-ubuntu font-bold`}>
+              MOTION DESIGN
+            </h4>
+            <p className={`text-[15px] font-nunito font-normal`}>
+              very good in video edting and manipulation
+            </p>
+          </motion.div>
+          <motion.div
+            whileHover={{ background: "#fff", scale: 1.1, color: "#2DD2E3" }}
+            className={`flex flex-col gap-[20px] shadow-card rounded-[10px] px-[25px] py-[30px] bg-white max-w-[263px] max-h-[227px] w-full`}
+          >
+            <Logic />
+            <h4 className={`text-[20px] font-ubuntu font-bold`}>
+              WEB SCRAPING
+            </h4>
+            <p className={`text-[15px] font-nunito font-normal`}>
+              Over a two years of experience building products for clients
+              across africa.
             </p>
           </motion.div>
         </div>
