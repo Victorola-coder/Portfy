@@ -15,7 +15,7 @@ const About = () => {
         About
       </h1>
       <p
-        className={`mt-[37px] text-black text-[17px] font-nunito font-normal w-[546px]`}
+        className={`mt-[17px] text-black text-[17px] font-nunito font-normal w-[546px]`}
       >
         I have honed my skills in Web Development and I have core understanding
         of advance UI design principles. 1+ Years of experience. Specialized in
@@ -32,7 +32,7 @@ const About = () => {
         on my radar.
       </p>
       <p
-        className={`mt-[37px] text-black text-[17px] font-nunito font-normal w-[546px]`}
+        className={`mt-[17px] text-black text-[17px] font-nunito font-normal w-[546px]`}
       >
         I design, even though I{"'"}m probably not the typical designer sitting
         in front of an Illustrator art-board & tweaking pixels. You can always
@@ -43,16 +43,13 @@ const About = () => {
 
       <div>
         <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
           onClick={handleDownload}
-          className="px-4 py-2 text-white bg-blue-500 rounded"
+          className="text-white mt-[20px] bg-[#009DAE] shadow-cv rounded md:px-[30px] md:py-[19px] transition-all duration-500 hover:bg-[#009DAE]/80"
         >
-          <a
-            href={Resume}
-            download="VickyJay.pdf"
-            // className="px-4 py-2 text-white bg-blue-500 rounded"
-            rel="noopener noreferrer"
-          >
-            About me
+          <a href={Resume} download="VickyJay.pdf" rel="noopener noreferrer">
+            Download CV
           </a>
         </motion.button>
       </div>

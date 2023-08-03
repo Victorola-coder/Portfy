@@ -19,7 +19,8 @@ export default {
       boxShadow: {
         'hire': '0px 15px 25px 0px rgba(255, 79, 110, 0.37)',
         'talk': '0px 10px 18px 0px rgba(88, 188, 199, 0.40)',
-        "card": "0px 15px 30px 0px rgba(118, 172, 177, 0.17)"
+        "card": "0px 15px 30px 0px rgba(118, 172, 177, 0.17)",
+        "cv": "0px 15px 25px 0px rgba(87, 239, 255, 0.40)",
 
       },
       colors: {
