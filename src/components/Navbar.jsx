@@ -30,8 +30,8 @@ const Navbar = () => {
   ];
   return (
     <div className="mx-auto containers">
-      <div className="top_gradient z-2"></div>
-      <nav className="mx-auto mt-[19px] flex justify-between items-center  md:px-[50px] md:mt-[33px]">
+      <div className="top_gradient"></div>
+      <nav className="mx-auto mt-[19px] px-4 flex justify-between items-center  md:px-[50px] md:mt-[33px]">
         <Link to="/">
           <div className="flex items-center -space-x-[10px]">
             <img src={logo} alt="logo" />
@@ -73,7 +73,7 @@ const Navbar = () => {
           </Link>
         </motion.div>
         {/* mobile Navbar */}
-        <div className="overflow-hidden md:hidden">
+        <div className="z-50 overflow-hidde md:hidden">
           <div className="block md:hidden">
             <button
               className="space-y-1.5"

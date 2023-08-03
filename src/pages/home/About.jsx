@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import Resume from "./Resume.pdf";
+import Resume from "../../../src/Resume.pdf";
+
 const About = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
