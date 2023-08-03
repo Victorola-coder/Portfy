@@ -29,7 +29,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="containers mx-auto">
+    <div className="mx-auto containers">
       <div className="top_gradient z-2"></div>
       <nav className="mx-auto mt-[19px] flex justify-between items-center  md:px-[50px] md:mt-[33px]">
         <Link to="/">
@@ -48,10 +48,10 @@ const Navbar = () => {
               <NavLink key={index} to={navLink.path}>
                 {({ isActive }) => (
                   <div
-                    className={`before:content-[''] font-roboto text-[16px] leading-normal before:bg-[#FF4F6] hover:border-b-[#FF4F6E] hover:border-b-2 transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
+                    className={`before:content-[''] font-roboto text-[16px] leading-normal hover:before:bg-[#FF4F6E] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 ${
                       isActive
-                        ? "text-[#4C686F] before:w-full"
-                        : "text-white before:w-[0px] hover:before:w-full"
+                        ? "text-[#4C686F] hover:before:w-full"
+                        : "text-white hover:before:w-full"
                     } relative`}
                   >
                     {navLink.label}
@@ -73,7 +73,7 @@ const Navbar = () => {
           </Link>
         </motion.div>
         {/* mobile Navbar */}
-        <div className="md:hidden overflow-hidden">
+        <div className="overflow-hidden md:hidden">
           <div className="block md:hidden">
             <button
               className="space-y-1.5"
@@ -104,18 +104,18 @@ const Navbar = () => {
                 isOpened ? " translate-x-[7%]" : "-translate-y-[150%]"
               } pt-4 left-0 right-0`}
             >
-              <ul className="mx-auto px-3">
+              <ul className="px-3 mx-auto">
                 <div className="flex flex-col items-start gap-[24px] justify-between mb-[22px]">
                   {Links.map((navLink, index) => (
                     <div
                       key={index}
-                      className="group flex items-center gap-1"
+                      className="flex items-center gap-1 group"
                       onClick={() => setIsOpened(!isOpened)}
                     >
                       <div
                         className={`group-hover:h-9 bg-[#010E21] w-1 rounded-full h-1 transition-all duration-300`}
                       ></div>
-                      <li className="py-2 w-full">
+                      <li className="w-full py-2">
                         <Link
                           to={navLink.path}
                           className="text-[#4C686F] font-roboto font-normal text-[14px] leading-[18.23px] font-dm p-3 rounded-lg transition-all duration-300 hover:text-[#FF4F6E]"
