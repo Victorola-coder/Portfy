@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import heroimg from "../../../assets/images/heroimg.png";
 import { FbIcon, IgIcon, InIcon, TwIcon } from "../../../assets/Icons";
+import tinyDot from "../../../assets/images/tiny-dot.png";
 const Hero = () => {
   return (
     <div className={`mx-auto mt-[53px]`}>
@@ -33,7 +34,7 @@ const Hero = () => {
               great user experiences.
             </small>
           </div>
-          <div>
+          <div className="relative">
             <motion.button
               whileTap={{ scale: 0.9 }}
               whileHover={{ scale: 1.1 }}
@@ -41,6 +42,12 @@ const Hero = () => {
             >
               Hire Now
             </motion.button>
+            <img
+              src={tinyDot}
+              className="absolute right-[130px] top-4"
+              alt="tiny-dot"
+              draggable={false}
+            />
           </div>
           <div className={`w-[264px] h-[3px] bg-line`}></div>
 
@@ -66,6 +73,18 @@ const Hero = () => {
               className={`h-auto w-auto`}
             >
               <TwIcon
+                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
+              />
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/vickyjayox"
+              target="_blank"
+              rel="noreferrer"
+              whileTap={{ scale: 1.1 }}
+              whileHover={{ scale: 0.99 }}
+              className={`h-auto w-auto`}
+            >
+              <IgIcon
                 className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
             </motion.a>
