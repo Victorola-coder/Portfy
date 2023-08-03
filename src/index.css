@@ -6,7 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: #ff4f6e 2px solid;
+  /* outline: #ff4f6e 2px solid; */
 }
 
 body::-webkit-scrollbar {

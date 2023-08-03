@@ -1,4 +1,5 @@
-import { Elipse, WbDevIcon } from "../../assets/Icons";
+import { motion } from "framer-motion";
+import { Elipse, Vctrl, WbDevIcon } from "../../assets/Icons";
 
 export default function Services() {
   return (
@@ -14,19 +15,34 @@ export default function Services() {
           Services
         </h1>
 
-        <div className={`mt-[40px]`}>
-          <div
-            className={`flex flex-col gap-[20px] rounded-[10px] p-2 bg-white max-w-[263px] max-h-[227px] w-full`}
+        <div
+          className={`flex flex-wrap items-center gap-[16px] mt-[40px] transition-all duration-700 text-black`}
+        >
+          <motion.div
+            whileHover={{ background: "#fff", scale: 1.1, color: "#2DD2E3" }}
+            className={`flex flex-col gap-[20px] shadow-card rounded-[10px] px-[25px] py-[30px] bg-white max-w-[263px] max-h-[227px] w-full`}
           >
             <WbDevIcon />
-            <h4 className={`text-[20px] font-ubuntu font-bold text-black`}>
+            <h4 className={`text-[20px] font-ubuntu font-bold`}>
               WEB DEVELOPMENT
             </h4>
-            <p className={`text-[15px] font-nunito font-normal text-black`}>
+            <p className={`text-[15px] font-nunito font-normal`}>
               Highly skilled at progressive enhancement, design systems & UI
               Engineering.
             </p>
-          </div>
+          </motion.div>
+          <motion.div
+            whileHover={{ background: "#fff", scale: 1.1, color: "#2DD2E3" }}
+            className={`flex flex-col gap-[20px] shadow-card rounded-[10px] px-[25px] py-[30px] bg-white max-w-[263px] max-h-[227px] w-full`}
+          >
+            <Vctrl />
+            <h4 className={`text-[20px] font-ubuntu font-bold`}>
+              VERSION CONTROL
+            </h4>
+            <p className={`text-[15px] font-nunito font-normal`}>
+              I can use version control systems well, and Git is my go-to-tool
+            </p>
+          </motion.div>
         </div>
       </div>
     </div>
