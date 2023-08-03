@@ -1,4 +1,14 @@
+import { motion } from "framer-motion";
+import Resume from "./Resume.pdf";
 const About = () => {
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = { Resume };
+    downloadLink.download = "VickyJay's Resume.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   return (
     <div>
       <h1 className={`font-ubuntu text-[30px] font-bold text-[#009DAE]`}>
@@ -32,11 +42,19 @@ const About = () => {
       </p>
 
       <div>
-        <button>
-          <a id="download" href="../" download="VickyJay's Resume">
-            Download CV
+        <motion.button
+          onClick={handleDownload}
+          className="px-4 py-2 text-white bg-blue-500 rounded"
+        >
+          <a
+            href={Resume}
+            download="VickyJay.pdf"
+            // className="px-4 py-2 text-white bg-blue-500 rounded"
+            rel="noopener noreferrer"
+          >
+            About me
           </a>
-        </button>
+        </motion.button>
       </div>
     </div>
   );
