@@ -42,7 +42,7 @@ const Hero = () => {
               Hire Now
             </motion.button>
           </div>
-          <div className={`w-[364px] h-[3px] bg-line`}></div>
+          <div className={`w-[264px] h-[3px] bg-line`}></div>
 
           <div className={`flex items-center gap-[32px]`}>
             <motion.a
