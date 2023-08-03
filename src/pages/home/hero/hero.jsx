@@ -45,7 +45,10 @@ const Hero = () => {
           <div className={`w-[364px] h-[3px] bg-line`}></div>
 
           <div className={`flex items-center gap-[32px]`}>
-            <motion.span
+            <motion.a
+              href="https://web.facebook.com/victortoluu"
+              target="_blank"
+              rel="noreferrer"
               whileTap={{ scale: 1.1 }}
               whileHover={{ scale: 0.99 }}
               className={`h-auto w-auto`}
@@ -53,8 +56,11 @@ const Hero = () => {
               <FbIcon
                 className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </motion.span>
-            <motion.span
+            </motion.a>
+            <motion.a
+              href="https://twitter.com/HeyVickyJay"
+              target="_blank"
+              rel="noreferrer"
               whileTap={{ scale: 1.1 }}
               whileHover={{ scale: 0.99 }}
               className={`h-auto w-auto`}
@@ -62,8 +68,11 @@ const Hero = () => {
               <TwIcon
                 className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </motion.span>
-            <motion.span
+            </motion.a>
+            <motion.a
+              href="https://www.instagram.com/vickyjayox"
+              target="_blank"
+              rel="noreferrer"
               whileTap={{ scale: 1.1 }}
               whileHover={{ scale: 0.99 }}
               className={`h-auto w-auto`}
@@ -71,7 +80,7 @@ const Hero = () => {
               <IgIcon
                 className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
               />
-            </motion.span>
+            </motion.a>
             {/* <span className={`h-auto w-auto`}>
               <InIcon
                 className={`h-[30px] w-[30px] border-[#009DAE] rounded-full  border-[2px] border-solid`}
