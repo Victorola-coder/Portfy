@@ -1,10 +1,8 @@
-import heroimg from "../../images/heroimg.png";
-import Navbar from "../../assets/components/Navbar";
+import heroimg from "../../../assets/images/heroimg.png";
 
 const Hero = () => {
   return (
     <div className={`mx-auto mt-[53px]`}>
-      <Navbar />
       <main className={`mx-auto flex  justify-center items-center `}>
         <div className="">
           <img src={heroimg} className={`ml-[50px]`} alt="hero image" />
