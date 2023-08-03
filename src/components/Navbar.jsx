@@ -60,14 +60,18 @@ const Navbar = () => {
               </NavLink>
             ))}
           </ul>
-          <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.2 }}>
-            <Link to="/talk" className="">
-              <button className="bg-[#009DAE] sm:pt-[10px] rounded-[5px] md:pt-[13px] md:pb-[12px] px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF] max-[w-[68px] ">
-                Let{"'"}s Talk
-              </button>
-            </Link>
-          </motion.div>
         </div>
+        <motion.div
+          className="hidden md:block"
+          whileHover={{ scale: 0.9 }}
+          whileTap={{ scale: 1.2 }}
+        >
+          <Link to="/talk" className="">
+            <button className="bg-[#009DAE] sm:pt-[10px] rounded-[5px] md:pt-[13px] md:pb-[12px] px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF] max-[w-[68px] ">
+              Let{"'"}s Talk
+            </button>
+          </Link>
+        </motion.div>
         {/* mobile Navbar */}
         <div className="md:hidden">
           <div className="block md:hidden">
@@ -96,8 +100,8 @@ const Navbar = () => {
               />
             </button>
             <div
-              className={`absolute block w-[345px] mx-auto rounded-lg mt-[15px] bg-white md:hidden z-10 transition-all duration-300 ${
-                isOpened ? " translate-y-0" : "-translate-y-[150%]"
+              className={`bg-[#fefefe] absolute block max-w-[400px] mx-auto rounded-lg mt-[15px] md:hidden z-10 transition-all duration-300 ${
+                isOpened ? " translate-y-0" : "translate-x-[150%]"
               } pt-4 left-0 right-0`}
             >
               <ul className="mx-auto px-3">
@@ -123,12 +127,12 @@ const Navbar = () => {
                   ))}
                 </div>
               </ul>
-              <Link>
+              <Link to="/talk">
                 <motion.div
-                  className="w-full bg-[#009DAE] text-center  transition-all duration-200"
+                  className="w-full bg-[#009DAE] hover:bg-[#009DAE]/90 text-center rounded-[10px] transition-all duration-200"
                   whileTap={{ scale: 1.1 }}
                 >
-                  <button className="w-fit rounded-[10px] hover:bg-[#009DAE]/70 p-3 px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF]">
+                  <button className="w-fit  p-3 px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF]">
                     Let{"'"}s Talk
                   </button>
                 </motion.div>

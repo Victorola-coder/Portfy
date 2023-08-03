@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: #ff4f6e 2px solid; */
 }
 
 body::-webkit-scrollbar {
@@ -56,4 +57,40 @@ body {
   top: -129px;
   background: #ff4f6e;
   filter: blur(302px);
+}
+
+.mobile_navbg {
+  /* position: relative; */
+  /* height: auto; */
+  /* width: auto; */
+  overflow: hidden;
+  background: linear-gradient(
+    76deg,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff,
+    #fde1ff,
+    #e0e7ff,
+    #e0f9ff,
+    #fffae9,
+    #e8eaff,
+    #ffe3f7,
+    #daf1ff
+  );
+  background-size: 500% 500%;
+  -webkit-animation: slime 45s ease infinite;
+  animation: slime 45s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
