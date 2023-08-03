@@ -93,12 +93,13 @@ export function InIcon({ className }) {
   );
 }
 
-export const WbDevIcon = () => {
+export const WbDevIcon = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"
       height="40"
+      className={className}
       viewBox="0 0 40 40"
       fill="none"
     >
@@ -114,12 +115,13 @@ export const WbDevIcon = () => {
   );
 };
 
-export function Vctrl() {
+export function Vctrl({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"
       height="40"
+      className={className}
       viewBox="0 0 40 40"
       fill="none"
     >
@@ -131,12 +133,13 @@ export function Vctrl() {
   );
 }
 
-export const Motion = () => {
+export const Motion = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"
       height="40"
+      className={className}
       viewBox="0 0 40 40"
       fill="none"
     >
@@ -228,12 +231,13 @@ export const Motion = () => {
   );
 };
 
-export function Logic() {
+export function Logic({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="40"
       height="40"
+      className={className}
       viewBox="0 0 40 40"
       fill="none"
     >
@@ -245,12 +249,13 @@ export function Logic() {
   );
 }
 
-export const Elipse = () => {
+export const HalfElipse = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="57"
       height="121"
+      className={className}
       viewBox="0 0 57 121"
       fill="none"
     >
@@ -268,3 +273,18 @@ export const Elipse = () => {
     </svg>
   );
 };
+
+export function Elipse({ className }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="50"
+      height="50"
+      viewBox="0 0 50 50"
+      fill="none"
+      className={className}
+    >
+      <circle cx="25" cy="25" r="21.5" stroke="#2DD2E3" strokeWidth="7" />
+    </svg>
+  );
+}

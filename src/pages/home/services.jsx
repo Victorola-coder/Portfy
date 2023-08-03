@@ -1,11 +1,17 @@
 import { motion } from "framer-motion";
-import { Elipse, Logic, Motion, Vctrl, WbDevIcon } from "../../assets/Icons";
+import {
+  HalfElipse,
+  Logic,
+  Motion,
+  Vctrl,
+  WbDevIcon,
+} from "../../assets/Icons";
 
 export default function Services() {
   return (
     <div className={`relative bg-[#FFFFFF]`}>
-      <div className="absolute">
-        <Elipse />
+      <div className="absolute animate-pulse">
+        <HalfElipse />
       </div>
 
       <div className={`px-[72px] py-[80px]`}>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import heroimg from "../../assets/images/heroimg.png";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "../../assets/Icons";
+import { Elipse, FbIcon, IgIcon, InIcon, TwIcon } from "../../assets/Icons";
 import tinyDot from "../../assets/images/tiny-dot.png";
 const Hero = () => {
   return (
@@ -27,7 +27,7 @@ const Hero = () => {
             <p
               className={`font-ubuntu font-bold text-[#253235]  md:text-[60px] md:leading-[68.84px] md:max-w-[520px]`}
             >
-              Frontend Developer.
+              Creative <br /> Frontend Developer.
             </p>
             <small className={`md:mt-3 text-base font-capriola`}>
               I like to craft solid and scalable frontend <br /> products with
@@ -44,67 +44,73 @@ const Hero = () => {
             </motion.button>
             <img
               src={tinyDot}
-              className="absolute right-[130px] top-4"
+              className="absolute right-[130px] top-4 animate-pulse"
               alt="tiny-dot"
               draggable={false}
             />
           </div>
           <div className={`w-[264px] h-[3px] bg-line`}></div>
 
-          <div className={`flex items-center gap-[32px]`}>
-            <motion.a
-              href="https://web.facebook.com/victortoluu"
-              target="_blank"
-              rel="noreferrer"
-              whileTap={{ scale: 1.1 }}
-              whileHover={{ scale: 0.99 }}
-              className={`h-auto w-auto`}
-            >
-              <FbIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
-              />
-            </motion.a>
-            <motion.a
-              href="https://twitter.com/HeyVickyJay"
-              target="_blank"
-              rel="noreferrer"
-              whileTap={{ scale: 1.1 }}
-              whileHover={{ scale: 0.99 }}
-              className={`h-auto w-auto`}
-            >
-              <TwIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
-              />
-            </motion.a>
-            <motion.a
-              href="https://www.instagram.com/vickyjayox"
-              target="_blank"
-              rel="noreferrer"
-              whileTap={{ scale: 1.1 }}
-              whileHover={{ scale: 0.99 }}
-              className={`h-auto w-auto`}
-            >
-              <IgIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
-              />
-            </motion.a>
-            <motion.a
-              href="https://www.instagram.com/vickyjayox"
-              target="_blank"
-              rel="noreferrer"
-              whileTap={{ scale: 1.1 }}
-              whileHover={{ scale: 0.99 }}
-              className={`h-auto w-auto`}
-            >
-              <IgIcon
-                className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
-              />
-            </motion.a>
-            {/* <span className={`h-auto w-auto`}>
+          <div className={`flex items-center justify-between`}>
+            <div className={`flex items-center gap-[32px]`}>
+              <motion.a
+                href="https://web.facebook.com/victortoluu"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
+              >
+                <FbIcon
+                  className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
+                />
+              </motion.a>
+              <motion.a
+                href="https://twitter.com/HeyVickyJay"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
+              >
+                <TwIcon
+                  className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
+                />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/vickyjayox"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
+              >
+                <IgIcon
+                  className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
+                />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/vickyjayox"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className={`h-auto w-auto`}
+              >
+                <IgIcon
+                  className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
+                />
+              </motion.a>
+              {/* <span className={`h-auto w-auto`}>
               <InIcon
                 className={`h-[30px] w-[30px] border-[#009DAE] rounded-full  border-[2px] border-solid`}
               />
             </span> */}
+            </div>
+            <span>
+              {" "}
+              <Elipse className={`w-full mr-[77px]`} />{" "}
+            </span>
           </div>
         </div>
       </main>
