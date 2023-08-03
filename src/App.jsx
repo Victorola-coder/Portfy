@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Error from "./Error";
 import Navbar from "./components/Navbar";
+// import Test from "../Test";
 
 const App = () => {
   const location = useLocation();
@@ -39,6 +40,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="*" element={<Error />} />
+        {/* <Route path="/test" element={<Test />} /> */}
       </Routes>
     </>
   );

@@ -29,17 +29,17 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="container mx-auto">
+    <div className="containers mx-auto">
       <div className="top_gradient"></div>
-      <nav className="mx-auto mt-[19px] ml-[18px] mr-[15px] flex justify-between items-center  md:ml-[70px] md:mr-[70px]  md:mt-[33px]">
-        <a href="/">
+      <nav className="mx-auto mt-[19px] flex justify-between items-center  md:px-[50px] md:mt-[33px]">
+        <Link to="/">
           <div className="flex items-center -space-x-[10px]">
             <img src={logo} alt="logo" />
             <span className="font-capriola font-semibold text-[20px] leading-6 md:text-[30px] md:leading-[34.72px] ">
               ickyJay
             </span>
           </div>
-        </a>
+        </Link>
         <div className="navbar_gradient"></div>
         {/* Desktop Navbar */}
         <div className="hidden md:block">
@@ -66,14 +66,14 @@ const Navbar = () => {
           whileHover={{ scale: 0.9 }}
           whileTap={{ scale: 1.2 }}
         >
-          <Link to="/talk" className="">
+          <Link to="/talk" className="shadow-talk">
             <button className="bg-[#009DAE] sm:pt-[10px] rounded-[5px] md:pt-[13px] md:pb-[12px] px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF] max-[w-[68px] ">
               Let{"'"}s Talk
             </button>
           </Link>
         </motion.div>
         {/* mobile Navbar */}
-        <div className="md:hidden">
+        <div className="md:hidden overflow-hidden">
           <div className="block md:hidden">
             <button
               className="space-y-1.5"
@@ -100,8 +100,8 @@ const Navbar = () => {
               />
             </button>
             <div
-              className={`bg-[#fefefe] absolute block max-w-[400px] mx-auto rounded-lg mt-[15px] md:hidden z-10 transition-all duration-300 ${
-                isOpened ? " translate-y-0" : "translate-x-[150%]"
+              className={`overflow-hidden bg-[#fefefe] absolute block max-w-[400px] mx-auto rounded-lg mt-[15px] md:hidden z-10 transition-all duration-300 ${
+                isOpened ? " translate-x-[7%]" : "-translate-y-[150%]"
               } pt-4 left-0 right-0`}
             >
               <ul className="mx-auto px-3">
@@ -132,7 +132,7 @@ const Navbar = () => {
                   className="w-full bg-[#009DAE] hover:bg-[#009DAE]/90 text-center rounded-[10px] transition-all duration-200"
                   whileTap={{ scale: 1.1 }}
                 >
-                  <button className="w-fit  p-3 px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF]">
+                  <button className="w-fit shadow-talk p-3 px-[16px] font-ubuntu font-bold text-[15px] leading-[17.24px] text-[#FFFFFF]">
                     Let{"'"}s Talk
                   </button>
                 </motion.div>
