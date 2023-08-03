@@ -30,7 +30,7 @@ const Navbar = () => {
   ];
   return (
     <div className="containers mx-auto">
-      <div className="top_gradient"></div>
+      <div className="top_gradient z-2"></div>
       <nav className="mx-auto mt-[19px] flex justify-between items-center  md:px-[50px] md:mt-[33px]">
         <Link to="/">
           <div className="flex items-center -space-x-[10px]">

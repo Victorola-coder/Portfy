@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import heroimg from "../../../assets/images/heroimg.png";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "../../../assets/Icons";
-import tinyDot from "../../../assets/images/tiny-dot.png";
+import heroimg from "../../assets/images/heroimg.png";
+import { FbIcon, IgIcon, InIcon, TwIcon } from "../../assets/Icons";
+import tinyDot from "../../assets/images/tiny-dot.png";
 const Hero = () => {
   return (
-    <div className={`mx-auto mt-[53px]`}>
+    <div className={`bg-[#F8FEFF] mx-auto mt-[53px]`}>
       <main
         className={`flex flex-col items-center flex-wrap md:flex md:flex-row md:justify-between md:items-center `}
       >
