@@ -90,22 +90,23 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://www.instagram.com/vickyjayox"
+                href="https://www.linkedin.com/in/victor-olatunji-889568246/"
                 target="_blank"
                 rel="noreferrer"
+                title="this is not what you think it is"
                 whileTap={{ scale: 1.1 }}
                 whileHover={{ scale: 0.99 }}
                 className={`h-auto w-auto`}
               >
-                <IgIcon
+                <InIcon
                   className={`h-[30px] w-[30px] cursor-pointer border-[#009DAE] rounded-full p-1 border-[2px] border-solid transition-all duration-500 hover:bg-[#CFFAFF]`}
                 />
               </motion.a>
               {/* <span className={`h-auto w-auto`}>
-              <InIcon
-                className={`h-[30px] w-[30px] border-[#009DAE] rounded-full  border-[2px] border-solid`}
-              />
-            </span> */}
+                <InIcon
+                  className={`h-[30px] w-[30px] border-[#009DAE] rounded-full  border-[2px] border-solid`}
+                />
+              </span> */}
             </div>
             <span>
               {" "}

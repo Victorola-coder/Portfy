@@ -54,41 +54,52 @@ export const IgIcon = ({ className }) => {
 
 export function InIcon({ className }) {
   return (
+    //   <svg
+    //     xmlns="http://www.w3.org/2000/svg"
+    //     //   width="25"
+    //     //   height="25"
+    //     className={className}
+    //     viewBox="0 0 25 25"
+    //     fill="none"
+    //   >
+    //     <mask
+    //       id="mask0_15_179"
+    //       // eslint-disable-next-line react/no-unknown-property
+    //       mask-type="alpha"
+    //       maskUnits="userSpaceOnUse"
+    //       x="1"
+    //       y="1"
+    //       width="23"
+    //       height="23"
+    //     >
+    //       <path
+    //         d="M4.68746 6.25001C5.83805 6.25001 6.77079 5.31727 6.77079 4.16668C6.77079 3.01608 5.83805 2.08334 4.68746 2.08334C3.53687 2.08334 2.60413 3.01608 2.60413 4.16668C2.60413 5.31727 3.53687 6.25001 4.68746 6.25001Z"
+    //         fill="#FF4F6E"
+    //         stroke="#FF4F6E"
+    //         strokeWidth="1.2"
+    //       />
+    //       <path
+    //         d="M2.60413 9.375H6.77079V22.3958H2.60413V9.375ZM10.9375 14.3229V22.3958H14.5833V15.1042C14.5833 13.8021 15.3645 12.7604 16.6666 12.7604C17.9687 12.7604 18.75 14.0625 18.75 15.1042V22.3958H22.3958V14.3229C22.3958 12.7604 20.5729 9.375 16.6666 9.375C12.7604 9.375 10.9375 12.7604 10.9375 14.3229Z"
+    //         fill="#FF4F6E"
+    //         stroke="#FF4F6E"
+    //         strokeWidth="1.2"
+    //         strokeLinejoin="round"
+    //       />
+    //     </mask>
+    //     <g mask="url(#mask0_15_179)">
+    //       <path d="M0 0H25V25H0V0Z" fill="#009DAE" />
+    //     </g>
+    //   </svg>
     <svg
+      viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
-      //   width="25"
-      //   height="25"
-      className={className}
-      viewBox="0 0 25 25"
       fill="none"
+      className={className}
     >
-      <mask
-        id="mask0_15_179"
-        // eslint-disable-next-line react/no-unknown-property
-        mask-type="alpha"
-        maskUnits="userSpaceOnUse"
-        x="1"
-        y="1"
-        width="23"
-        height="23"
-      >
-        <path
-          d="M4.68746 6.25001C5.83805 6.25001 6.77079 5.31727 6.77079 4.16668C6.77079 3.01608 5.83805 2.08334 4.68746 2.08334C3.53687 2.08334 2.60413 3.01608 2.60413 4.16668C2.60413 5.31727 3.53687 6.25001 4.68746 6.25001Z"
-          fill="#FF4F6E"
-          stroke="#FF4F6E"
-          strokeWidth="1.2"
-        />
-        <path
-          d="M2.60413 9.375H6.77079V22.3958H2.60413V9.375ZM10.9375 14.3229V22.3958H14.5833V15.1042C14.5833 13.8021 15.3645 12.7604 16.6666 12.7604C17.9687 12.7604 18.75 14.0625 18.75 15.1042V22.3958H22.3958V14.3229C22.3958 12.7604 20.5729 9.375 16.6666 9.375C12.7604 9.375 10.9375 12.7604 10.9375 14.3229Z"
-          fill="#FF4F6E"
-          stroke="#FF4F6E"
-          strokeWidth="1.2"
-          strokeLinejoin="round"
-        />
-      </mask>
-      <g mask="url(#mask0_15_179)">
-        <path d="M0 0H25V25H0V0Z" fill="#009DAE" />
-      </g>
+      <path
+        d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"
+        fill="#FF4F6E"
+      />
     </svg>
   );
 }
