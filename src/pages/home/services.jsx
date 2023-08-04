@@ -8,7 +8,7 @@ import {
   WbDevIcon,
 } from "../../assets/Icons";
 import About from "./About";
-import LightSpeed from "react-reveal/LightSpeed";
+// import LightSpeed from "react-reveal/LightSpeed";
 export default function Services() {
   return (
     <div className={`relative bg-[#FFFFFF]`}>
@@ -16,7 +16,7 @@ export default function Services() {
         <HalfElipse />
       </div>
 
-      <div className={`flex justify-between gap-[10px] px-[72px] py-[80px]`}>
+      <div className={`flex justify-between space-x-4 px-[72px] py-[80px]`}>
         <div>
           <h1
             className={`font-ubuntu text-[#FF4F6E] font-bold md:text-[30px]  md:leading-[34.47px]`}
@@ -27,7 +27,7 @@ export default function Services() {
           <div
             className={`relative flex flex-wrap items-center  gap-[16px] mt-[40px] transition-all duration-700 text-black`}
           >
-            <LightSpeed left>
+            <left>
               {" "}
               <motion.div
                 whileHover={{
@@ -46,7 +46,7 @@ export default function Services() {
                   Engineering.
                 </p>
               </motion.div>
-            </LightSpeed>
+            </left>
             <motion.div
               whileHover={{ background: "#fff", scale: 1.1, color: "#2DD2E3" }}
               className={`flex flex-col gap-[20px] shadow-card rounded-[10px] px-[25px] py-[30px] bg-white max-w-[263px] max-h-[227px] w-full`}

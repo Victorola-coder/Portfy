@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Resume from "../../../src/Resume.pdf";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   const handleDownload = () => {
@@ -12,7 +12,7 @@ const About = () => {
     document.body.removeChild(downloadLink);
   };
   return (
-    <Zoom>
+    <>
       <div>
         <h1 className={`font-ubuntu text-[30px] font-bold text-[#009DAE]`}>
           About
@@ -57,7 +57,7 @@ const About = () => {
           </motion.button>
         </div>
       </div>
-    </Zoom>
+    </>
   );
 };
 
