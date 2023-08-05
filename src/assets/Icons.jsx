@@ -299,3 +299,73 @@ export function Elipse({ className }) {
     </svg>
   );
 }
+
+export const HalfMoon = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="41"
+      height="44"
+      className={className}
+      viewBox="0 0 41 44"
+      fill="none"
+    >
+      <path
+        d="M13.9698 15.6974C5.35286 25.4028 16.7924 49.6293 7.50063 41.3795C-1.79118 33.1297 -2.33825 18.5742 6.27871 8.8688C14.8957 -0.836581 29.4136 -2.01658 38.7054 6.2332C47.9972 14.483 22.5868 5.99201 13.9698 15.6974Z"
+        fill="white"
+        fillOpacity="0.4"
+      />
+    </svg>
+  );
+};
+
+export function LightCircle({ className }) {
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="70"
+    height="70"
+    viewBox="0 0 70 70"
+    fill="none"
+  >
+    <circle cx="35" cy="35" r="35" fill="white" fillOpacity="0.4" />
+  </svg>;
+}
+
+export const CirCircle = ({ className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="71"
+      height="71"
+      className={className}
+      viewBox="0 0 71 71"
+      fill="none"
+    >
+      <path
+        d="M69.2833 35.5C69.2833 54.2777 54.061 69.5 35.2833 69.5C16.5056 69.5 1.28333 54.2777 1.28333 35.5C1.28333 16.7223 16.5056 1.5 35.2833 1.5C54.061 1.5 69.2833 16.7223 69.2833 35.5Z"
+        stroke="white"
+        strokeOpacity="0.4"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+};
+
+export function Triangle({ className }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="36"
+      height="39"
+      className={className}
+      viewBox="0 0 36 39"
+      fill="none"
+    >
+      <path
+        d="M33.7315 36.8169L2.69749 28.2428L23.0739 3.3143L33.7315 36.8169Z"
+        stroke="#FF4F6E"
+        strokeWidth="3"
+      />
+    </svg>
+  );
+}
